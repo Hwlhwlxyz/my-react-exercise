@@ -15,10 +15,16 @@ const style = {
 export default function muiApp() {
   return (
     <div>
-        <Header/>
+        {/* <Header/> */}
+        <Button variant='text' className='text-red-500'>
+          Text
+        </Button>
       <Button variant="contained">Hello World</Button>
-
-      <List sx={style} component="nav" aria-label="mailbox folders">
+      <Button variant="text">Text</Button>
+<Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >tailwindcss</Button>
+<Button variant="outlined">Outlined</Button>
+<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
+      {/* <List sx={style} component="nav" aria-label="mailbox folders">
   <ListItem button>
     <ListItemText primary="Inbox" />
   </ListItem>
@@ -33,8 +39,7 @@ export default function muiApp() {
   <ListItem button>
     <ListItemText primary="Spam" />
   </ListItem>
-</List>
-
+</List> */}
     </div>
   );
 }
